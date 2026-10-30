@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advanced Positioning Task</title>
+ <style>
+/*<!-- Insert CSS here -->*/
+.box-static{
+height: 100px;
+width: 100px;
+background-color: lightblue;
+top: 20px;
+margin: 10px;
+}
+.box-relative-1{
+    width: 150px;
+    height: 150px;
+    background-color: lightgreen;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    
+}
+.box-relative-2{
+    width: 150px;
+    height: 150px;
+    background-color: lightpink;
+    position: relative;
+    left: 55px;
+    bottom: 30px;
+  
+}
+.container{
+height: 300px;
+width: 300px;
+background-color: lightgray;
+position: relative;
+left: 10px;
+
+}
+.box-absolute-1{
+    width: 110px;
+    height: 110px;
+    background-color: coral;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 3;
+}
+.box-absolute-2{
+    width: 130px;
+    height: 130px;
+    background-color: lightskyblue;
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    z-index: 2;
+}
+.box-absolute-3{
+    width: 160px;
+    height: 160px;
+    background-color: mediumpurple;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    z-index: 1;
+
+}
+.box-zindex-1{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(238, 119, 105);
+    position: absolute;
+    top: 75px;
+    left: 180px;
+    z-index: 2;
+}
+.box-zindex-2{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    z-index: 1;
+}
+.box-fixed-1{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: fixed;
+    top: 5px;
+    left: 300px;
+}
+.box-fixed-2{
+    height: 110px;
+    width: 120px;
+    background-color: rgb(255, 166, 41);
+    position: fixed;
+    bottom: 0px;
+    left: 8px;
+    z-index: 4;
+}
+ </style>
+</head>
+<body>
+ <!-- Static positioned boxes -->
+ <div class="box-static">Static</div>
+ <div class="box-static">Static</div>
+ <!-- Relative positioned boxes -->
+ <div class="box-relative-1">Relative 1</div>
+ <div class="box-relative-2">Relative 2</div>
+ <!-- Container with absolute positioned boxes inside -->
+ <div class="container">
+ <div class="box-absolute-1">Absolute 1</div>
+ <div class="box-absolute-2">Absolute 2</div>
+ <div class="box-absolute-3">Absolute 3</div>
+ </div>
+ <!-- Overlapping boxes with z-index outside container -->
+ <div class="box-zindex-1">Z-Index 5</div>
+ <div class="box-zindex-2">Z-Index 4</div>
+ <!-- Fixed positioned boxes -->
+ <div class="box-fixed-1">Fixed Top-Right</div>
+ <div class="box-fixed-2">Fixed Bottom-Left</div>
+</body>
+</html>
